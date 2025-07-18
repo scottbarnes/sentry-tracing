@@ -29,7 +29,7 @@ class Span
    * @param string $operation   Operation name (see: https://develop.sentry.dev/sdk/performance/span-operations/)
    * @param string $description Description
    */
-  public function __construct(string $operation, string|null $description = null)
+  public function __construct(string $operation, ?string $description = null)
   {
     $this->tracingEnabled = defined('SENTRY_TRACE') ? SENTRY_TRACE : true;
 
